@@ -278,7 +278,7 @@ progress::-webkit-progress-value {
 	position: absolute;    
 	top: 50%;
 	left: 50%;    
-	background: url(img/notes-eye.png) 0 0 no-repeat;
+	background: url("../img/eye.png") 0 0 no-repeat;
 	z-index: 100;
 }
 .microsoft {

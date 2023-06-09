@@ -199,18 +199,18 @@ body {
 
 .about__skills {
     display: flex;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .about-photo {
-    margin-top: 102px;
-    margin-left: 150px;
+    margin: 102px auto 0;
     width: 555px;
     height: 450px;
 }
 
 .about__left {
-    margin-top: 204px;
-    margin-left: 354px;
+    margin: 204px auto 0;
     height: 450px;
 }
 .about__p-s {
@@ -242,9 +242,9 @@ progress::-webkit-progress-value {
 .notes {
     display: flex;
     flex-wrap: wrap;
-    width: 1920px;
-    margin-left: -32px;
-    margin-top: 28px;
+    max-width: 1920px;
+    min-width: auto;
+    justify-content: center;
 }
 .item {
     width: 480px;
@@ -378,6 +378,80 @@ footer {
 }
 .icon {
     margin-left: 21.88px;
+}
+@media screen and (max-width: 1280px) {
+    .about__left {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header__right {
+        margin-left: 15px;
+    }
+    .about__projects {
+        grid-template-columns: repeat(3, auto);
+    }
+    .about__skills {
+        width: auto;
+    }
+    .about-photo {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    .about__right {
+        max-width: 500px;
+    }
+    .about__left {
+        max-width: 445px;
+        height: auto;
+        margin: 0 auto;
+    }
+    iframe {
+        max-width: 900px;
+        max-height: 450px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 690px) {
+    .header__title {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__flex {
+        flex-wrap: wrap;
+    }
+    .header__menu {
+        gap: 5px;
+        grid-template-columns: repeat(3, auto);
+    }
+    .header__left {
+        margin: 160px auto 0;
+    }
+    .about__skills {
+        margin-top: 50px;
+    }
+    .about__me {
+        max-width: 540px;
+        max-height: 130px;
+        width: 100%;
+        height: 100%;
+    }
+    .about__projects {
+        grid-template-columns: repeat(2, auto);
+    }
+    .about__left {
+        width: 100%;
+    }
+    .about-line {
+        max-width: 440px;
+        width: 100%;
+    }
+    .footer__left {
+        margin-left: 50px;
+    }
 }
 
 
